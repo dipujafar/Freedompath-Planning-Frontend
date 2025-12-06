@@ -1,7 +1,9 @@
-import { Button } from "@/components/ui/button";
+import Hero from "@/modules/home/hero/Hero";
 
 export default function Home() {
   return (
-    <Button>Button</Button>
+    <>
+      <Hero />
+    </>
   );
 }

@@ -3,7 +3,7 @@
 
 @theme {
   --color-grayish-blue: #467bab;
-  --color-primary-color: "#DEEEFF";
+  --color-primary-color: #DEEEFF;
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -129,5 +129,8 @@
 @layer components {
   .flex-center {
     @apply flex items-center justify-center;
+  }
+  .test-border{
+    @apply border border-red-500
   }
 }
