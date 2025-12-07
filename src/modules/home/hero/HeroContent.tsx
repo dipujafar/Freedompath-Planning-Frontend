@@ -19,7 +19,7 @@ export default function HeroContent() {
                     <h4 className="2xl:text-6xl xl:text-4xl md:text-3xl text-2xl font-bold max-w-2xl">
                         Helping CPAs and Business Owners Grow Value and Plan Exits
                     </h4>
-                    <p className="max-w-2xl xl:text-2xl md:text-xl text-lg text-[#717171]">
+                    <p className="max-w-2xl xl:text-2xl md:text-xl text-lg font-light text-[#717171]">
                         Transform your business with strategic valuation insights, growth planning, and exit strategies tailored for accounting professionals and business owners.
                     </p>
                 </div>
@@ -32,10 +32,10 @@ export default function HeroContent() {
                             tags.map((tag, idx) => <div key={idx} className="bg-linear-to-t from-[#4176A6] to-[#518DC3D9] rounded-lg text-white py-3.5 px-4">{tag}</div>)
                         }
                     </div>
-                    <Link href={""}>
+                    <Link href={"#"}>
                         <AnimatedBgFillBtn
                             label="Learn More"
-                            className="cursor-default "
+                            className="cursor-pointer"
                         />
                     </Link>
                 </div>

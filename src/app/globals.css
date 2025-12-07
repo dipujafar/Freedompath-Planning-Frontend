@@ -133,4 +133,16 @@
   .test-border{
     @apply border border-red-500
   }
+  .section-padding{
+    @apply xl:py-24 lg:py-16 md:py-12 py-8;
+  }
+  .section-title{
+    @apply 2xl:text-[44px] xl:text-4xl lg:text-3xl text-2xl font-semibold text-center
+  }
+  .section-title-tag{
+    @apply font-bold text-[#4B83B6] text-center;
+  }
+  .section-description{
+    @apply text-center text-[#2A2A2A] max-w-2xl mx-auto;
+  }
 }
