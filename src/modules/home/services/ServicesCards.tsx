@@ -57,6 +57,7 @@ export default function ServicesCards() {
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}  className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-9 gap-5">
             {
                 serviceData?.map((service) => (
+                      // @ts-expect-error: Property 'foo' does not exist on type '{}'.
                     <motion.div key={service?.id} variants={itemVariants} className={cn("lg:space-y-6 space-y-4 group cursor-pointer", 
                     service?.id === 2 && "xl:translate-y-6 lg:translate-y-3.5")}>
                         <Image src={service?.image} alt="service-image" width={300} height={300} className="w-full" />

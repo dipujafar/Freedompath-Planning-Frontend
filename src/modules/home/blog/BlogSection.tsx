@@ -1,5 +1,8 @@
 import Container from "@/components/shared/Container";
 import BlogCards from "./BlogCards";
+import Link from "next/link";
+import AnimatedBgFillBtn from "@/components/animation/AnimatedBgFillBtn";
+import { cn } from "@/lib/utils";
 
 
 export default function BlogSection() {
@@ -15,6 +18,13 @@ export default function BlogSection() {
 
             {/* main content */}
             <BlogCards />
+            <Link href={"#"} className="flex-center">
+                <AnimatedBgFillBtn
+                    label="View more"
+                    className={cn("cursor-pointer border text-black border-[#B5B5B5]")}
+                    icon={true}
+                />
+            </Link>
         </Container>
     )
 }

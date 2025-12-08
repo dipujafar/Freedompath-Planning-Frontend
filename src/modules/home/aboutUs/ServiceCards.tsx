@@ -55,6 +55,7 @@ export function ServiceCards() {
         <div className="w-full xl:px-8 px-4 xl:py-9 py-6 bg-[#F6F8FA] rounded-lg">
             <motion.div className="space-y-4" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                 {serviceData.map((service) => (
+                      // @ts-expect-error: Property 'foo' does not exist on type '{}'.
                     <motion.div key={service.id} variants={itemVariants} className="flex gap-4 p-5  rounded-lg">
                         {/* Icon Badge */}
                         <div className="shrink-0">

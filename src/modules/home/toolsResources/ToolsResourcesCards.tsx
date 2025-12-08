@@ -1,6 +1,4 @@
 "use client"
-import { ArrowUpRight } from "lucide-react"
-import Image from "next/image"
 import { motion } from "motion/react"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
@@ -56,6 +54,7 @@ export default function ToolsResourcesCards() {
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 xl:gap-9 gap-5">
             {
                 serviceData?.map((service) => (
+                      // @ts-expect-error: Property 'foo' does not exist on type '{}'.
                     <motion.div key={service?.id} variants={itemVariants} className={cn("xl:space-y-7 lg:space-y-5 space-y-4  cursor-pointer bg-white xl:p-9 md:p-6 p-5 rounded-3xl", service?.id === 2 && "bg-linear-to-b from-[#4176A6] to-[#518DC3D9] text-white")}>
                         <div className="flex justify-between gap-x-1">
                             <h1 className="xl:text-3xl lg:text-2xl text-xl font-semibold max-w-[100px]">{service?.title}</h1>
