@@ -23,8 +23,8 @@ const navLinks = [
         href: "/resources"
     },
     {
-        title: "Blog",
-        href: "/blog"
+        title: "Blogs",
+        href: "/blogs"
     },
     {
         title: "Book",
@@ -32,7 +32,7 @@ const navLinks = [
     },
     {
         title: "Contact Us",
-        href: "Contact Us"
+        href: "contact-us"
     }
 ]
 

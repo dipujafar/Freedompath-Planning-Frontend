@@ -146,3 +146,25 @@
     @apply text-center text-[#2A2A2A] max-w-2xl mx-auto;
   }
 }
+
+
+
+/* =========== react pagination styles =================== */
+.rpb-item {
+  border: 1px solid #DEEEFF !important;
+  border-radius: 16px !important;
+}
+
+.rpb-item:hover {
+  border: 2px solid #DEEEFF !important;
+  border-radius: 16px !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.rpb-item--active {
+  background-color: #467BAB !important;
+}
+
+.scroll-hide::-webkit-scrollbar {
+  scrollbar-width: none;
+}

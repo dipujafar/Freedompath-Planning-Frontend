@@ -1,8 +1,36 @@
 import Container from "@/components/shared/Container";
-import BlogCards from "./BlogCards";
 import Link from "next/link";
 import AnimatedBgFillBtn from "@/components/animation/AnimatedBgFillBtn";
 import { cn } from "@/lib/utils";
+import BlogCards from "@/components/shared/cards/BlogCards";
+
+const serviceData = [
+    {
+        id: 1,
+        title: "Most popular design systems to learn from in 2022",
+        tag: "Design Systems",
+        image: "/blog_image_1.png"
+    },
+    {
+        id: 2,
+        title: "Understanding accessibility makes you a better",
+        tag: "Accessibility",
+        image: "/blog_image_2.png"
+    },
+    {
+        id: 3,
+        title: "15 best tools that will help you build your website",
+        tag: "Tech",
+        image: "/blog_image_3.png"
+    },
+    {
+        id: 4,
+        title: "Understanding accessibility makes you a better",
+        tag: "Tech",
+        image: "/blog_image_2.png"
+    },
+
+]
 
 
 export default function BlogSection() {
@@ -17,7 +45,7 @@ export default function BlogSection() {
             </div>
 
             {/* main content */}
-            <BlogCards />
+            <BlogCards data={serviceData} />
             <Link href={"#"} className="flex-center">
                 <AnimatedBgFillBtn
                     label="View more"
