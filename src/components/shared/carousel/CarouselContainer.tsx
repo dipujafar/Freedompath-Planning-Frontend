@@ -14,7 +14,7 @@ const CarouselContainer = ({ children }: { children: ReactNode }) => {
       }}
       plugins={[
         Autoplay({
-          delay: 4000,
+          delay: 3500,
           stopOnInteraction: false,
           stopOnMouseEnter: true,
         }),

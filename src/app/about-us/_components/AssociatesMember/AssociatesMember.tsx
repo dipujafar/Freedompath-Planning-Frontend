@@ -1,4 +1,5 @@
 import Container from "@/components/shared/Container";
+import MembersCarousel from "./MembersCarousel";
 
 
 export default function AssociatesMember() {
@@ -15,7 +16,9 @@ export default function AssociatesMember() {
             </div>
 
             {/* main content */}
-            
+            <div className="max-w-6xl mx-auto">
+                <MembersCarousel />
+            </div>
         </Container>
     )
 }
