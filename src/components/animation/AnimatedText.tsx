@@ -1,5 +1,6 @@
 "use client"
 
+import { cn } from "@/lib/utils"
 import { motion } from "motion/react"
 
 interface AnimatedTextProps {
@@ -9,7 +10,7 @@ interface AnimatedTextProps {
   duration?: number
 }
 
-export default function AnimatedText({ text, className = "", delay = 0, duration = 0.07 }: AnimatedTextProps) {
+export default function AnimatedText({ text, className = "", delay = 0, duration = 0.05 }: AnimatedTextProps) {
   const letters = text.split("")
 
   const container = {
@@ -39,13 +40,14 @@ export default function AnimatedText({ text, className = "", delay = 0, duration
   return (
     <motion.span
       className={className}
-      style={{ display: "inline-block" }}
+      style={{ display: "inline-block", overflow: "visible", lineHeight: "1.2" }}
       variants={container}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
+      viewport={{ once: true }}
     >
       {letters.map((letter, index) => (
-        
+        // @ts-expect-error: Property 'foo' does not exist on type '{}'.
         <motion.span key={index} style={{ display: "inline-block" }} variants={child}>
           {letter === " " ? "\u00A0" : letter}
         </motion.span>

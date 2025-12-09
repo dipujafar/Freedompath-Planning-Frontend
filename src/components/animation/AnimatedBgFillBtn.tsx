@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, MoveUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import React from "react";
 
 interface FancyButtonProps {
