@@ -32,7 +32,7 @@ export default function AboutDetails() {
                 backgroundRepeat: "no-repeat, no-repeat",
                 backgroundSize: "contain, contain",
             }}
-            className="relative min-h-[80vh] xl:py-24 bg-primary-color"
+            className="relative section-padding bg-primary-color"
         >
             <Container>
                 {/* =================== header ========================*/}

@@ -3,10 +3,12 @@ import ToolsResourcesCards from "./ToolsResourcesCards";
 import Link from "next/link";
 import AnimatedBgFillBtn from "@/components/animation/AnimatedBgFillBtn";
 import { cn } from "@/lib/utils";
+import { Activity } from "react";
+import PaginationSection from "@/components/shared/pagination/PaginationSection";
 
-export default function ToolsResourcesSection() {
+export default function ToolsResourcesSection({ className, length = 3 }: { className?: string, length?: number }) {
     return (
-        <div className='bg-primary-color'>
+        <div id="resources" className={cn('bg-primary-color', className)}>
             <Container className='section-padding lg:space-y-10 space-y-7'>
                 {/* heading */}
                 <div className="lg:space-y-3 space-y-2">
@@ -20,15 +22,20 @@ export default function ToolsResourcesSection() {
                 </div>
 
                 {/* main content */}
-                <ToolsResourcesCards />
+                <ToolsResourcesCards length={length} />
 
-                <Link href={"#"} className="flex-center">
-                    <AnimatedBgFillBtn
-                        label="View more"
-                        className={cn("cursor-pointer border text-black border-[#B5B5B5]")}
-                        icon={true}
-                    />
-                </Link>
+                <Activity mode={length <= 3 ? "visible" : "hidden"}>
+                    <Link href={"/resources#resources"} className="flex-center">
+                        <AnimatedBgFillBtn
+                            label="View more"
+                            className={cn("cursor-pointer border text-black border-[#B5B5B5]")}
+                            icon={true}
+                        />
+                    </Link>
+                </Activity>
+                <Activity mode={length > 3 ? "visible" : "hidden"}>
+                    <PaginationSection />
+                </Activity>
             </Container>
         </div>
     )

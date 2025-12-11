@@ -15,7 +15,7 @@ export default function Hero() {
                 backgroundRepeat: "no-repeat, no-repeat",
                 backgroundSize: "contain, contain",
             }}
-            className="relative min-h-[80vh] xl:py-24 bg-primary-color"
+            className="relative section-padding bg-primary-color"
         >
             <Container className='flex justify-between'>
                 <div className='flex-1'>
@@ -23,7 +23,7 @@ export default function Hero() {
                 </div>
                 <div className='flex-1  flex justify-end relative'>
                     <Image src={hero_image} alt="hero_image" className='rounded-3xl lg:max-w-3/4 2xl:min-h-[700px] object-cover' />
-                    <GrowthData />
+                    <GrowthData className='bottom-2 left-0' />
                 </div>
             </Container>
         </div>

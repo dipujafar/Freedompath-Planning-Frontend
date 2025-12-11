@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export default function GrowthData({ className }: { className?: string }) {
     return (
-        <div className={cn("bg-white lg:max-w-[450px]  lg:space-y-6 space-y-4 absolute bottom-2 left-0 lg:px-12 px-8 lg:py-10 py-7 rounded-3xl", className)}>
+        <div className={cn("bg-white lg:max-w-[450px]  lg:space-y-6 space-y-4 absolute  lg:px-12 px-8 lg:py-10 py-7 rounded-3xl", className)}>
             <StatisticCounts />
             <div className="space-y-2.5">
                 <p className="text-3xl font-semibold">Growth is our priority.</p>
