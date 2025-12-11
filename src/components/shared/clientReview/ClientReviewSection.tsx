@@ -1,6 +1,7 @@
 import Container from '../Container'
 import ClientReviewCarousel from './ClientReviewCarousel'
 
+
 export default function ClientReviewSection() {
     return (
         <div className='bg-primary-color'>
@@ -17,6 +18,7 @@ export default function ClientReviewSection() {
                 <div className="max-w-7xl mx-auto">
                     <ClientReviewCarousel />
                 </div>
+               
             </Container>
         </div>
     )

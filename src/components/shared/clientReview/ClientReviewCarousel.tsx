@@ -13,7 +13,7 @@ const reviewData = [
     rating: 5
   },
   {
-    id: 1,
+    id: 2,
     name: "Jenny Wilson",
     comment: "We love Landingfolio! Our designers were using it for their projects, so we already knew what kind of design they want.",
     image: review_client_2,

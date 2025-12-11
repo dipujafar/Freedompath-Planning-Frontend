@@ -1,5 +1,8 @@
 import Container from "@/components/shared/Container";
 import MembersCarousel from "./MembersCarousel";
+import Link from "next/link";
+import AnimatedBgFillBtn from "@/components/animation/AnimatedBgFillBtn";
+import { cn } from "@/lib/utils";
 
 
 export default function AssociatesMember() {
@@ -19,6 +22,13 @@ export default function AssociatesMember() {
             <div className="max-w-6xl mx-auto">
                 <MembersCarousel />
             </div>
+            <Link href={"/about-us/highlighted-associates"} className="flex-center">
+                <AnimatedBgFillBtn
+                    label="View Details"
+                    className={cn("cursor-pointer border text-black border-[#B5B5B5]")}
+                    icon={true}
+                />
+            </Link>
         </Container>
     )
 }

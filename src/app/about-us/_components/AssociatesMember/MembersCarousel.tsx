@@ -49,7 +49,7 @@ export default function MembersCarousel() {
                         key={member?.id}
                         className=" basis-1/2  lg:basis-1/3  "
                     >
-                        <Link href="#" className="relative group">
+                        <Link href={`/about-us/highlighted-associates#${member?.id}`} className="relative group">
                             <ImageWithOpacity image={member?.image} className="w-full lg:h-[450px] md:h-[330px] h-[250px] object-cover rounded-2xl" opacityClass="opacity-40 rounded-2xl" />
                             <div className="absolute bottom-3 text-white flex-between w-full px-6">
                                 <h3 className="md:text-lg md:font-semibold font-medium ">{member?.name}</h3>
