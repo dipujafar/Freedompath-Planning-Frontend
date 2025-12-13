@@ -93,3 +93,44 @@ export const recoursesData = [
     },
 
 ]
+
+export const ebooksData = [
+    {
+        id: 1,
+        title: "Monkey  Mind",
+        description: "Navigating Emotional Highs and Crushing Lows of Building a Successful Buisness",
+        image: "/ebook_image1.png"
+    },
+    {
+        id: 2,
+        title: "The Definitive Guide",
+        description: "Navigating Emotional Highs and Crushing Lows of Building a Successful Buisness",
+        image: "/ebook_image2.png"
+    },
+    {
+        id: 3,
+        title: "Monkey  Mind",
+        description: "Navigating Emotional Highs and Crushing Lows of Building a Successful Buisness",
+        image: "/ebook_image1.png"
+    },
+    {
+        id: 4,
+        title: "The Definitive Guide",
+        description: "Navigating Emotional Highs and Crushing Lows of Building a Successful Buisness",
+        image: "/ebook_image2.png"
+    },
+    {
+        id: 5,
+        title: "Monkey  Mind",
+        description: "Navigating Emotional Highs and Crushing Lows of Building a Successful Buisness",
+        image: "/ebook_image1.png"
+    },
+    {
+        id: 6,
+        title: "The Definitive Guide",
+        description: "Navigating Emotional Highs and Crushing Lows of Building a Successful Buisness",
+        image: "/ebook_image2.png"
+    },
+    
+
+]

@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { motion } from "motion/react"
 import { TBlogPost } from "@/types"
+import Link from "next/link"
 
 
 const containerVariants = {
@@ -36,7 +37,8 @@ export default function BlogCards({data}: {data: TBlogPost[]}) {
         <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-2 lg:gap-9 gap-3">
             {
                 data?.map((service) => (
-                      // @ts-expect-error: Property 'foo' does not exist on type '{}'.
+                    <Link href={`/blogs/${service?.id}`} key={service?.id}>
+                      {/* @ts-expect-error: Property 'foo' does not exist on type '{}'. */}
                     <motion.div key={service?.id} variants={itemVariants} className="lg:space-y-6 md:space-y-4 space-y-2.5 group cursor-pointer max-w-[344px]">
                         <Image src={service?.image} alt="service-image" width={300} height={300} className="w-full rounded-2xl" />
                         <div className="lg:space-y-1.5 space-y-1">
@@ -44,6 +46,7 @@ export default function BlogCards({data}: {data: TBlogPost[]}) {
                             <p className="bg-linear-to-t from-[#3C77AD] to-[#5AC1DE] bg-clip-text text-transparent font-medium">{service?.tag}</p>
                         </div>
                     </motion.div>
+                    </Link>
                 ))
             }
         </motion.div>
